@@ -15,7 +15,7 @@ async function displayUser(username) {
 }
 
 displayUser(username).then(data =>{
-  // Esta promesa se resuelve con la informacion ya guardada previamente, y esta informacion se pasara como un parametro de una funcion adicional llamada crearPokemon
+  // Esta promesa se resuelve con la informacion ya guardada previamente y coloca los valores en los id llamados desde el DOM
     $n.textContent = data.name;
     $b.textContent = data.blog;
     $l.textContent = data.location;
